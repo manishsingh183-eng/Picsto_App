@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -17,21 +18,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#3F88C5", 
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        
-        border: "#CBD5E1",
-        input: "#CBD5E1",
-        ring: "#CBD5E1",
-        background: "#F7FAFC",
-        foreground: "#1A202C",
-        green: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        purple: {
           100: "#F4F7FE",
           200: "#BCB6FF",
           400: "#868CFF",
-          500: "#0a9396", 
+          500: "#7857FF",
           600: "#4318FF",
         },
         dark: {
@@ -40,40 +36,42 @@ module.exports = {
           600: "#2B3674",
           700: "#384262",
         },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         secondary: {
-          DEFAULT: "#EDF2F7",
-          foreground: "#2D3748",
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "#E53E3E",
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#A0AEC0",
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "#4A5568",
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
-          DEFAULT: "#F7FAFC",
-          foreground: "#1A202C",
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "#FFFFFF",
-          foreground: "#1A202C",
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
       fontFamily: {
         IBMPlex: ["var(--font-ibm-plex)"],
       },
       backgroundImage: {
-        "purple-gradient": "linear-gradient(to right, #3F88C5, #4318FF)", 
-        "green-gradient": "linear-gradient(to right, #3F88C5, #4318FF)", 
+        "purple-gradient": "url('/assets/images/gradient-bg.svg')",
         banner: "url('/assets/images/banner-bg.png')",
       },
-
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
