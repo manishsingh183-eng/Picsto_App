@@ -12,7 +12,7 @@ const IBMPlex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Picify",
+  title: "Picsto",
   description: "AI-powered image generator",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider appearance={{
-      variables: { colorPrimary: '#295249' }
+      variables: { colorPrimary: '#624cf5' }
     }}>
       <html lang="en">
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
